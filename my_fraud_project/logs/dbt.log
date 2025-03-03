@@ -1,0 +1,123 @@
+[0m17:32:38.423162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF83C0F140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF83C0D130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF840F2870>]}
+
+
+============================== 17:32:38.424320 | b3462c4a-3fe8-456f-a483-3863e674e8fc ==============================
+[0m17:32:38.424320 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:32:38.424320 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'D:\\My-fraud-detection-project\\airflow-databricks\\my_fraud_project\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:32:38.764887 [info ] [MainThread]: dbt version: 1.9.2
+[0m17:32:38.764887 [info ] [MainThread]: python version: 3.12.1
+[0m17:32:38.764887 [info ] [MainThread]: python path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\python.exe
+[0m17:32:38.764887 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m17:32:39.830634 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:32:39.830634 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:32:39.830634 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:32:40.892959 [info ] [MainThread]: Using profiles dir at C:\Users\Admin\.dbt
+[0m17:32:40.892959 [info ] [MainThread]: Using profiles.yml file at C:\Users\Admin\.dbt\profiles.yml
+[0m17:32:40.892959 [info ] [MainThread]: Using dbt_project.yml file at D:\My-fraud-detection-project\airflow-databricks\my_fraud_project\dbt_project.yml
+[0m17:32:40.897041 [info ] [MainThread]: adapter type: databricks
+[0m17:32:40.897041 [info ] [MainThread]: adapter version: 1.9.7
+[0m17:32:41.036734 [info ] [MainThread]: Configuration:
+[0m17:32:41.038740 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:32:41.038740 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:32:41.038740 [info ] [MainThread]: Required dependencies:
+[0m17:32:41.038740 [debug] [MainThread]: Executing "git --help"
+[0m17:32:41.075903 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:32:41.075903 [debug] [MainThread]: STDERR: "b''"
+[0m17:32:41.075903 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:32:41.075903 [info ] [MainThread]: Connection:
+[0m17:32:41.079737 [info ] [MainThread]:   host: https://dbc-027bae20-73a2.cloud.databricks.com/
+[0m17:32:41.080525 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/0b594be64c368027
+[0m17:32:41.081577 [info ] [MainThread]:   catalog: hive_metastore
+[0m17:32:41.082576 [info ] [MainThread]:   schema: fraud_schema
+[0m17:32:41.083392 [info ] [MainThread]: Registered adapter: databricks=1.9.7
+[0m17:32:41.533054 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2197230868416, session-id=None, name=debug, idle-time=0s, acquire-count=0, language=None, thread-identifier=(9060, 10744), compute-name=) - Creating connection
+[0m17:32:41.535059 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m17:32:41.535059 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2197230868416, session-id=None, name=debug, idle-time=0.0s, acquire-count=1, language=None, thread-identifier=(9060, 10744), compute-name=) - Acquired connection on thread (9060, 10744), using default compute resource for model 'None'
+[0m17:32:41.535059 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2197230868416, session-id=None, name=debug, idle-time=0.0s, acquire-count=1, language=None, thread-identifier=(9060, 10744), compute-name=) - Checking idleness
+[0m17:32:41.535059 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2197230868416, session-id=None, name=debug, idle-time=0.0s, acquire-count=1, language=None, thread-identifier=(9060, 10744), compute-name=) - Retrieving connection
+[0m17:32:41.535059 [debug] [MainThread]: Using databricks connection "debug"
+[0m17:32:41.537064 [debug] [MainThread]: On debug: select 1 as id
+[0m17:32:41.537064 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:32:42.018373 [error] [MainThread]: Databricks adapter: Connection(session-id=Unknown) - Exception while trying to create connection: Error during request to server: : Invalid access token. [TraceId: 00-e47fc11dccf059e885d6728b92859749-4bf020d8408a6e7e-00]. 
+Error properties: attempt=1/30, bounded-retry-delay=None, elapsed-seconds=0.4434218406677246/900.0, error-message=: Invalid access token. [TraceId: 00-e47fc11dccf059e885d6728b92859749-4bf020d8408a6e7e-00], http-code=403, method=OpenSession, no-retry-reason=non-retryable error, original-exception=, query-id=None, session-id=None
+[0m17:32:42.018373 [debug] [MainThread]: Databricks adapter: Exception while trying to execute query
+select 1 as id
+: Database Error
+  Error during request to server: : Invalid access token. [TraceId: 00-e47fc11dccf059e885d6728b92859749-4bf020d8408a6e7e-00]. 
+[0m17:32:42.018373 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2197230868416, session-id=None, name=debug, idle-time=0.0s, acquire-count=0, language=None, thread-identifier=(9060, 10744), compute-name=) - Released connection
+[0m17:32:42.018373 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m17:32:42.018373 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:32:42.018373 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Database Error
+    Error during request to server: : Invalid access token. [TraceId: 00-e47fc11dccf059e885d6728b92859749-4bf020d8408a6e7e-00]. 
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m17:32:42.030004 [debug] [MainThread]: Command `dbt debug` failed at 17:32:42.028902 after 3.84 seconds
+[0m17:32:42.030890 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:32:42.031876 [debug] [MainThread]: On debug: No close available on handle
+[0m17:32:42.032716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF824DEF60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF97440080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FF86CB43E0>]}
+[0m17:32:42.032716 [debug] [MainThread]: Flushing usage events
+[0m17:32:42.528379 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:33:22.783812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B296DC8800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B296EF6510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B296EF4770>]}
+
+
+============================== 17:33:22.792819 | 12e9aed0-ad98-4b80-8520-65b096a1dea4 ==============================
+[0m17:33:22.792819 [info ] [MainThread]: Running with dbt=1.9.2
+[0m17:33:22.792819 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'D:\\My-fraud-detection-project\\airflow-databricks\\my_fraud_project\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'D:\\My-fraud-detection-project\\airflow-databricks\\my_fraud_project\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:33:22.836329 [info ] [MainThread]: dbt version: 1.9.2
+[0m17:33:22.836329 [info ] [MainThread]: python version: 3.12.1
+[0m17:33:22.836329 [info ] [MainThread]: python path: C:\Users\Admin\AppData\Local\Programs\Python\Python312\python.exe
+[0m17:33:22.836329 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m17:33:23.830984 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:33:23.830984 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:33:23.830984 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:33:24.872880 [info ] [MainThread]: Using profiles dir at D:\My-fraud-detection-project\airflow-databricks\my_fraud_project\.dbt
+[0m17:33:24.872880 [info ] [MainThread]: Using profiles.yml file at D:\My-fraud-detection-project\airflow-databricks\my_fraud_project\.dbt\profiles.yml
+[0m17:33:24.872880 [info ] [MainThread]: Using dbt_project.yml file at D:\My-fraud-detection-project\airflow-databricks\my_fraud_project\dbt_project.yml
+[0m17:33:24.872880 [info ] [MainThread]: adapter type: databricks
+[0m17:33:24.872880 [info ] [MainThread]: adapter version: 1.9.7
+[0m17:33:25.018100 [info ] [MainThread]: Configuration:
+[0m17:33:25.018100 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:33:25.018100 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:33:25.018100 [info ] [MainThread]: Required dependencies:
+[0m17:33:25.018100 [debug] [MainThread]: Executing "git --help"
+[0m17:33:25.066955 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:33:25.067955 [debug] [MainThread]: STDERR: "b''"
+[0m17:33:25.067955 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:33:25.071050 [info ] [MainThread]: Connection:
+[0m17:33:25.071050 [info ] [MainThread]:   host: https://dbc-027bae20-73a2.cloud.databricks.com/
+[0m17:33:25.071050 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/0b594be64c368027
+[0m17:33:25.076924 [info ] [MainThread]:   catalog: hive_metastore
+[0m17:33:25.078942 [info ] [MainThread]:   schema: fraud_schema
+[0m17:33:25.080893 [info ] [MainThread]: Registered adapter: databricks=1.9.7
+[0m17:33:25.498826 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=1866867567712, session-id=None, name=debug, idle-time=0s, acquire-count=0, language=None, thread-identifier=(15868, 3956), compute-name=) - Creating connection
+[0m17:33:25.498826 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m17:33:25.498826 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=1866867567712, session-id=None, name=debug, idle-time=0.0s, acquire-count=1, language=None, thread-identifier=(15868, 3956), compute-name=) - Acquired connection on thread (15868, 3956), using default compute resource for model 'None'
+[0m17:33:25.498826 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=1866867567712, session-id=None, name=debug, idle-time=0.0s, acquire-count=1, language=None, thread-identifier=(15868, 3956), compute-name=) - Checking idleness
+[0m17:33:25.498826 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=1866867567712, session-id=None, name=debug, idle-time=0.0s, acquire-count=1, language=None, thread-identifier=(15868, 3956), compute-name=) - Retrieving connection
+[0m17:33:25.498826 [debug] [MainThread]: Using databricks connection "debug"
+[0m17:33:25.498826 [debug] [MainThread]: On debug: select 1 as id
+[0m17:33:25.498826 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:33:26.380800 [debug] [MainThread]: Databricks adapter: Connection(session-id=01eff6ed-3178-1e7d-90de-3908cbd089bf) - Created
+[0m17:33:32.977457 [debug] [MainThread]: SQL status: OK in 7.480 seconds
+[0m17:33:32.978968 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01eff6ed-3178-1e7d-90de-3908cbd089bf, command-id=01eff6ed-31a8-1f05-80a6-91f425e867f5) - Closing
+[0m17:33:33.309170 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=1866867567712, session-id=01eff6ed-3178-1e7d-90de-3908cbd089bf, name=debug, idle-time=0.0s, acquire-count=0, language=None, thread-identifier=(15868, 3956), compute-name=) - Released connection
+[0m17:33:33.317157 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:33:33.317157 [info ] [MainThread]: [32mAll checks passed![0m
+[0m17:33:33.317157 [debug] [MainThread]: Command `dbt debug` succeeded at 17:33:33.317157 after 10.75 seconds
+[0m17:33:33.324939 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:33:33.327028 [debug] [MainThread]: On debug: Close
+[0m17:33:33.329912 [debug] [MainThread]: Databricks adapter: Connection(session-id=01eff6ed-3178-1e7d-90de-3908cbd089bf) - Closing
+[0m17:33:33.555498 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2A9D95250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2A9D464B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B29736D520>]}
+[0m17:33:33.555498 [debug] [MainThread]: Flushing usage events
+[0m17:33:34.017607 [debug] [MainThread]: An error was encountered while trying to flush usage events

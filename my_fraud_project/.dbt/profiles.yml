@@ -1,0 +1,11 @@
+my_fraud_project:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: hive_metastore
+      schema: fraud_schema  # The database/schema name in Databricks
+      host: https://dbc-027bae20-73a2.cloud.databricks.com/
+      http_path: /sql/1.0/warehouses/0b594be64c368027
+      token: dapifc8a2ed7dcfe2b604e0a09dc64c25c12
+      # Additional config if using cluster vs. SQL warehouse
