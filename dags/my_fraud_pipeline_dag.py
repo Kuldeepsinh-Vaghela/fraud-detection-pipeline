@@ -33,7 +33,7 @@ load_users_task = PythonOperator(
     dag=dag,
 )
 
-Task 2: Stream Transactional Data to Kafka
+#Task 2: Stream Transactional Data to Kafka
 def stream_data():
     os.system("python3 dags/scripts/streaming_data.py")
 
