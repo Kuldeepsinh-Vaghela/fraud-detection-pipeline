@@ -6,7 +6,7 @@ import boto3
 
 fake = Faker()
 
-TOPICS = ["transactions", "fraud_cases", "device_info", "ip_activity"]
+
 
 
 
